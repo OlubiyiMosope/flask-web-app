@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Interview App</title>
+</head>
+<body>
+
+    {% for n in nums %}
+        
+        {% if check_prime(n) %}
+            <u>{{ n }}</u>           
+        {% elif n in tens %}   <!-- to display every 10th number in the series in bold -->
+            <b>{{ n }}</b>
+        {% elif n in thirds %}   <!-- to display every 3rd number in the series in italic -->
+            <i>{{ n }}</i>
+        {% else %}
+            {{ n }}
+        {% endif %}
+
+    {% endfor %}
+
+</body>
+</html>
