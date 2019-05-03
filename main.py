@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-nums = range(1,101)
+nums = range(1,10001)
 thirds = nums[::3]
 tens = nums[::10]
 
